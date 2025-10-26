@@ -24,5 +24,16 @@ npm i ethers
 
 node examples/demo.js
 
+## Usage Example
+
+```js
+import { generateLocalWallet, verifyMessage } from "eth-wallet-utils";
+
+const wallet = generateLocalWallet();
+const msg = "gm web3";
+const sig = await wallet.signMessage(msg);
+console.log("verified:", verifyMessage(msg, sig));
+
+
 
 
