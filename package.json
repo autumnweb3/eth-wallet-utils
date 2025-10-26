@@ -1,0 +1,10 @@
+{
+  "name": "eth-wallet-utils",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.13.2"
+  }
+}
