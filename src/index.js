@@ -30,3 +30,12 @@ export function verifyMessage(message, signature) {
 export function generateLocalWallet() {
   return ethers.Wallet.createRandom();
 }
+
+// Quick validation for Ethereum addresses
+export function isAddress(addr) {
+  try {
+    return ethers.isAddress(addr);
+  } catch {
+    return false;
+  }
+}
